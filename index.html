@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolia - Namrata Dasari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Section Background Images */
+    #home {
+      background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #education {
+      background-image: url('https://images.unsplash.com/photo-1584697964154-0d0ef2a2fbee?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #skills {
+      background-image: url('https://images.unsplash.com/photo-1531497865142-48740d2c5f3c?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #projects {
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #experience {
+      background-image: url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #contact {
+      background-image: url('https://images.unsplash.com/photo-1518887576874-7a9af66a1ef1?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Portfolia</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-content">
+      <h1>I am Namrata Dasari</h1>
+      <p>A Computer Engineering Lecturer</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E. in Computer Science & Engineering</strong> – Solapur University (2019)</li>
+        <li><strong>Diploma in Computer Science & Engineering</strong> – MSBTE (2016)</li>
+        <li><strong>SSC</strong> – Maharashtra State Board, Pune (2013)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul>
+        <li>Communication & Presentation</li>
+        <li>Critical Thinking & Client Follow-Up</li>
+        <li>Proposal Writing & Negotiation</li>
+        <li>Customer Management & Requirement Gathering</li>
+        <li>Tools: MS Office, PHP, JavaScript, MySQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Water Quality Management System:</strong> IOT project using sensors to check water quality (pH, Turbidity, TDS).</li>
+        <li><strong>Online Generation of TC & Bonafide Certificate:</strong> PHP-based app for students to apply & receive certificates.</li>
+        <li><strong>Buyers and Sellers:</strong> Online ordering system using PHP for products/services.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-content">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Govt. Polytechnic, Solapur</strong> – Lecturer (Jul 2023 – Present)<br>Subjects: WPC, CSS, PIC, JPR</li>
+        <li><strong>Maulana Azad Polytechnic, Solapur</strong> – Lecturer (Jan 2020 – Jan 2021)<br>Subjects: WPD, CHM</li>
+      </ul>
+ 
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Phone:</strong> +91 9209424007</li>
+        <li><strong>Email:</strong> dasarinamrata1997@gmail.com</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi, Telugu</li>
+      </ul>
+      <p>I am passionate about teaching and continuously learning new technologies in computer engineering.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Namrata S. Dasari. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
